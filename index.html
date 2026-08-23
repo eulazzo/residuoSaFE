@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ResíduoSafe — Documentação de resíduos organizada em um só lugar</title>
+<meta name="description" content="Estamos desenvolvendo uma plataforma para clínicas, consultórios e laboratórios centralizarem coletas, MTRs, certificados e vencimentos. Participe da validação.">
+<meta name="theme-color" content="#07182F">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://residuosafe.com.br/">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="ResíduoSafe">
+<meta property="og:title" content="ResíduoSafe — Documentação de resíduos organizada em um só lugar">
+<meta property="og:description" content="Plataforma em desenvolvimento para centralizar coletas, documentos, certificados e vencimentos de resíduos de serviços de saúde.">
+<meta property="og:url" content="https://residuosafe.com.br/">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "ResíduoSafe",
+  "url": "https://residuosafe.com.br/",
+  "description": "Plataforma em desenvolvimento para organização documental da gestão de resíduos de serviços de saúde.",
+  "inLanguage": "pt-BR"
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#validacao">Ir para o formulário</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="shell header-inner">
+    <a class="brand" href="#top" aria-label="ResíduoSafe — início">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="32" height="32">
+          <rect width="32" height="32" rx="9" fill="currentColor" opacity=".08"/>
+          <path d="M11 9h7l4 4v10a1 1 0 0 1-1 1H11a1 1 0 0 1-1-1V10a1 1 0 0 1 1-1z" fill="none" stroke="currentColor" stroke-width="1.7"/>
+          <path d="M18 9v4h4" fill="none" stroke="currentColor" stroke-width="1.7"/>
+          <path d="M13.4 18.6l2 2 4-4.4" fill="none" stroke="var(--green)" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <span class="brand-name">Resíduo<em>Safe</em></span>
+    </a>
+
+    <nav class="site-nav" aria-label="Navegação principal">
+      <a href="#problema">Problema</a>
+      <a href="#ideia">A ideia</a>
+      <a href="#funcionalidades">Funcionalidades</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <a class="btn btn-sm btn-primary header-cta" href="#validacao" data-cta="header">Quero participar</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="hero-grid-bg" aria-hidden="true"></div>
+  <div class="hero-glow" aria-hidden="true"></div>
+
+  <div class="shell hero-inner">
+    <div class="hero-copy">
+      <p class="pill reveal" style="--d:0ms">
+        <span class="pill-dot" aria-hidden="true"></span>
+        Produto em desenvolvimento
+      </p>
+
+      <h1 class="hero-title reveal" style="--d:70ms">
+        Sua documentação de resíduos <em>organizada</em> em um só lugar.
+      </h1>
+
+      <p class="hero-sub reveal" style="--d:140ms">
+        Estamos desenvolvendo uma plataforma para clínicas e consultórios que querem
+        centralizar coletas, documentos, certificados e vencimentos sem depender de
+        planilhas e pastas espalhadas.
+      </p>
+
+      <div class="hero-actions reveal" style="--d:210ms">
+        <a class="btn btn-primary btn-lg" href="#validacao" data-cta="hero">
+          Quero participar da validação
+          <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn btn-ghost btn-lg" href="#ideia" data-cta="hero_secondary">Entender como funciona</a>
+      </div>
+
+      <p class="hero-note reveal" style="--d:280ms">
+        Estamos validando a solução com os primeiros estabelecimentos.
+        <span class="nowrap"><span class="sep" aria-hidden="true">·</span> Sem compromisso.</span>
+      </p>
+    </div>
+
+    <!-- Mockup ilustrativo do produto -->
+    <div class="hero-visual reveal" style="--d:180ms" aria-hidden="true">
+      <div class="mock">
+        <div class="mock-chrome">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+          <span class="mock-url">residuosafe · painel</span>
+        </div>
+
+        <div class="mock-body">
+          <div class="mock-head">
+            <div>
+              <p class="mock-kicker">Índice de organização documental</p>
+              <p class="mock-unit">Unidade Centro</p>
+            </div>
+            <div class="ring">
+              <span class="ring-val">92<i>%</i></span>
+            </div>
+          </div>
+
+          <div class="mock-stats">
+            <div class="mock-stat">
+              <span class="mock-stat-label">Documentos</span>
+              <span class="mock-stat-value">27</span>
+            </div>
+            <div class="mock-stat is-warn">
+              <span class="mock-stat-label">Pendências</span>
+              <span class="mock-stat-value">1</span>
+            </div>
+            <div class="mock-stat is-alert">
+              <span class="mock-stat-label">Próximos vencimentos</span>
+              <span class="mock-stat-value">2</span>
+            </div>
+          </div>
+
+          <ul class="mock-list">
+            <li><span class="tag tag-ok">Arquivado</span> Certificado de destinação</li>
+            <li><span class="tag tag-warn">Vence em breve</span> Licença ambiental</li>
+            <li><span class="tag tag-neutral">Registrado</span> MTR da coleta</li>
+          </ul>
+        </div>
+      </div>
+
+      <span class="mock-caption">Representação ilustrativa da interface planejada</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROBLEMA ============ -->
+<section class="section" id="problema">
+  <div class="shell">
+    <div class="section-head">
+      <p class="eyebrow"><span>01</span> O cenário de hoje</p>
+      <h2 class="section-title">Como você controla isso hoje?</h2>
+      <p class="section-lead">
+        Para muitos estabelecimentos, informações importantes acabam espalhadas entre
+        e-mails, WhatsApp, planilhas, pastas e documentos enviados pela empresa coletora.
+      </p>
+    </div>
+
+    <div class="cards-4">
+      <article class="card reveal-on-scroll">
+        <span class="card-icon" aria-hidden="true">📁</span>
+        <h3>Documentos espalhados</h3>
+        <p>MTRs, certificados, contratos e licenças em diferentes lugares.</p>
+      </article>
+      <article class="card reveal-on-scroll" style="--d:80ms">
+        <span class="card-icon" aria-hidden="true">⏰</span>
+        <h3>Vencimentos</h3>
+        <p>É fácil perder o prazo de um documento importante.</p>
+      </article>
+      <article class="card reveal-on-scroll" style="--d:160ms">
+        <span class="card-icon" aria-hidden="true">📄</span>
+        <h3>Comprovantes</h3>
+        <p>Encontrar rapidamente o comprovante de uma coleta pode ser trabalhoso.</p>
+      </article>
+      <article class="card reveal-on-scroll" style="--d:240ms">
+        <span class="card-icon" aria-hidden="true">🔎</span>
+        <h3>Fiscalização</h3>
+        <p>Quando alguém precisa dos documentos, localizar tudo pode consumir tempo.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ A IDEIA ============ -->
+<section class="section section-alt" id="ideia">
+  <div class="shell">
+    <div class="section-head">
+      <p class="eyebrow"><span>02</span> A ideia</p>
+      <h2 class="section-title">Estamos construindo uma forma mais simples de organizar tudo isso.</h2>
+      <p class="section-lead">
+        O ResíduoSafe nasceu da ideia de centralizar as informações relacionadas à
+        gestão de resíduos em um único ambiente.
+      </p>
+    </div>
+
+    <div class="idea-grid">
+      <ol class="flow reveal-on-scroll" aria-label="Fluxo de uma coleta">
+        <li class="flow-step"><span class="flow-node">1</span><div><h3>Empresa coletora</h3><p>Quem realiza a coleta no estabelecimento.</p></div></li>
+        <li class="flow-step"><span class="flow-node">2</span><div><h3>Coleta</h3><p>Data, tipo de resíduo e quantidade registrados.</p></div></li>
+        <li class="flow-step"><span class="flow-node">3</span><div><h3>MTR</h3><p>O manifesto vinculado àquela coleta.</p></div></li>
+        <li class="flow-step"><span class="flow-node">4</span><div><h3>Destinação</h3><p>O destino final informado para o resíduo.</p></div></li>
+        <li class="flow-step"><span class="flow-node">5</span><div><h3>Certificado</h3><p>O comprovante recebido após a destinação.</p></div></li>
+        <li class="flow-step is-end"><span class="flow-node">✓</span><div><h3>Arquivo organizado</h3><p>Tudo reunido no mesmo lugar, pronto para consulta.</p></div></li>
+      </ol>
+
+      <aside class="idea-aside reveal-on-scroll" style="--d:120ms">
+        <p class="idea-aside-title">Um histórico organizado para cada coleta.</p>
+        <p class="idea-aside-text">
+          Em vez de procurar em vários lugares, a ideia é que cada coleta tenha sua
+          própria linha do tempo — com os documentos correspondentes vinculados a ela.
+        </p>
+        <div class="idea-chip-row">
+          <span class="chip chip-ok">Coleta registrada</span>
+          <span class="chip chip-ok">MTR anexado</span>
+          <span class="chip chip-neutral">Certificado aguardando</span>
+        </div>
+        <p class="idea-aside-foot">
+          O ResíduoSafe não substitui sistemas governamentais nem a empresa coletora —
+          a proposta é ajudar a organizar a documentação que já circula na sua rotina.
+        </p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FUNCIONALIDADES ============ -->
+<section class="section" id="funcionalidades">
+  <div class="shell">
+    <div class="section-head">
+      <p class="eyebrow"><span>03</span> Escopo em estudo</p>
+      <h2 class="section-title">O que estamos pensando em construir</h2>
+      <p class="section-lead">
+        Nada disso está pronto ainda. As funcionalidades abaixo são hipóteses que
+        queremos validar antes de construir a plataforma.
+      </p>
+    </div>
+
+    <div class="cards-3">
+      <article class="card card-feature reveal-on-scroll">
+        <span class="badge-planned">Planejado</span>
+        <span class="card-icon" aria-hidden="true">♻️</span>
+        <h3>Controle de coletas</h3>
+        <p>Registre datas, empresas, tipos de resíduos, quantidades e documentos relacionados.</p>
+      </article>
+      <article class="card card-feature reveal-on-scroll" style="--d:70ms">
+        <span class="badge-planned">Planejado</span>
+        <span class="card-icon" aria-hidden="true">📄</span>
+        <h3>Cofre de documentos</h3>
+        <p>Centralize MTRs, certificados, licenças, contratos e outros documentos.</p>
+      </article>
+      <article class="card card-feature reveal-on-scroll" style="--d:140ms">
+        <span class="badge-planned">Planejado</span>
+        <span class="card-icon" aria-hidden="true">🔔</span>
+        <h3>Alertas</h3>
+        <p>Receba avisos sobre documentos próximos do vencimento ou informações pendentes.</p>
+      </article>
+      <article class="card card-feature reveal-on-scroll" style="--d:70ms">
+        <span class="badge-planned">Planejado</span>
+        <span class="card-icon" aria-hidden="true">🤖</span>
+        <h3>Auditoria inteligente</h3>
+        <p>Use IA para analisar documentos e ajudar a identificar possíveis inconsistências ou pendências.</p>
+      </article>
+      <article class="card card-feature reveal-on-scroll" style="--d:140ms">
+        <span class="badge-planned">Planejado</span>
+        <span class="card-icon" aria-hidden="true">📦</span>
+        <h3>Pasta de fiscalização</h3>
+        <p>Organize os documentos em uma estrutura simples para facilitar a localização quando necessário.</p>
+      </article>
+      <article class="card card-feature reveal-on-scroll" style="--d:210ms">
+        <span class="badge-planned">Planejado</span>
+        <span class="card-icon" aria-hidden="true">🏢</span>
+        <h3>Multiunidade</h3>
+        <p>Para empresas que possuem mais de uma clínica ou unidade.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DIFERENCIAL ============ -->
+<section class="section section-dark" id="diferencial">
+  <div class="dark-grid-bg" aria-hidden="true"></div>
+  <div class="shell">
+    <div class="section-head section-head-center">
+      <p class="eyebrow eyebrow-light"><span>04</span> A diferença</p>
+      <h2 class="section-title">Menos tempo procurando documentos.<br>Mais controle sobre sua operação.</h2>
+    </div>
+
+    <div class="compare">
+      <div class="compare-side compare-before reveal-on-scroll">
+        <p class="compare-label">Antes</p>
+        <div class="scatter">
+          <span class="scatter-chip" style="--r:-4deg">WhatsApp</span>
+          <span class="scatter-chip" style="--r:3deg">E-mail</span>
+          <span class="scatter-chip" style="--r:-2deg">Planilhas</span>
+          <span class="scatter-chip" style="--r:5deg">Pastas</span>
+          <span class="scatter-chip" style="--r:-3deg">PDFs</span>
+        </div>
+        <p class="compare-foot">Informação dispersa em canais diferentes.</p>
+      </div>
+
+      <div class="compare-arrow" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="24" height="24"><path d="M12 4v16M6 14l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </div>
+
+      <div class="compare-side compare-after reveal-on-scroll" style="--d:120ms">
+        <p class="compare-label compare-label-brand">ResíduoSafe</p>
+        <p class="compare-headline">Uma única plataforma</p>
+        <ul class="compare-list">
+          <li>Coletas e documentos no mesmo lugar</li>
+          <li>Vencimentos acompanhados</li>
+          <li>Histórico por unidade</li>
+          <li>Documentação pronta para consulta</li>
+        </ul>
+        <p class="compare-foot">Organização documental centralizada.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PARA QUEM ============ -->
+<section class="section" id="para-quem">
+  <div class="shell">
+    <div class="section-head">
+      <p class="eyebrow"><span>05</span> Público</p>
+      <h2 class="section-title">Estamos começando por quem mais lida com esse problema.</h2>
+    </div>
+
+    <div class="audience">
+      <div class="aud-card reveal-on-scroll"><span aria-hidden="true">🩺</span><p>Clínicas médicas</p></div>
+      <div class="aud-card reveal-on-scroll" style="--d:60ms"><span aria-hidden="true">🦷</span><p>Clínicas odontológicas</p></div>
+      <div class="aud-card reveal-on-scroll" style="--d:120ms"><span aria-hidden="true">🐶</span><p>Clínicas veterinárias</p></div>
+      <div class="aud-card reveal-on-scroll" style="--d:180ms"><span aria-hidden="true">🧪</span><p>Laboratórios</p></div>
+      <div class="aud-card reveal-on-scroll" style="--d:240ms"><span aria-hidden="true">🏥</span><p>Outros estabelecimentos de saúde</p></div>
+    </div>
+
+    <p class="audience-note">
+      Se você gerencia resíduos de serviços de saúde, <strong>queremos ouvir você.</strong>
+    </p>
+  </div>
+</section>
+
+<!-- ============ VALIDAÇÃO + FORMULÁRIO ============ -->
+<section class="validation" id="validacao">
+  <div class="dark-grid-bg" aria-hidden="true"></div>
+  <div class="validation-glow" aria-hidden="true"></div>
+
+  <div class="shell validation-inner">
+    <div class="validation-copy">
+      <p class="eyebrow eyebrow-light"><span>06</span> Validação</p>
+      <h2 class="validation-title">
+        Estamos validando essa ideia.<br>
+        Queremos saber se isso seria útil para você.
+      </h2>
+      <p class="validation-text">
+        Antes de desenvolver a plataforma, queremos conversar com profissionais que
+        realmente enfrentam esse problema.
+      </p>
+      <p class="validation-text">
+        Se você trabalha em uma clínica, consultório, laboratório ou empresa
+        relacionada à gestão de resíduos, deixe seu contato.
+      </p>
+
+      <ul class="validation-points">
+        <li>Leva cerca de 1 minuto</li>
+        <li>Não é uma venda — é uma conversa</li>
+        <li>Suas respostas orientam o que será construído</li>
+      </ul>
+
+      <div class="proof-placeholder" aria-label="Espaço reservado para provas sociais futuras">
+        <p class="proof-title">Espaço reservado</p>
+        <p class="proof-text">
+          Aqui ficarão os depoimentos dos primeiros profissionais que participarem
+          da validação. Ainda não temos nenhum — e não vamos inventar.
+        </p>
+      </div>
+    </div>
+
+    <!-- FORM -->
+    <div class="form-card" id="formCard">
+      <form id="leadForm" novalidate>
+        <p class="form-kicker">Lista de interessados</p>
+        <h3 class="form-title">Deixe seu contato</h3>
+
+        <!-- Honeypot: invisível para pessoas, atraente para bots.
+             Se vier preenchido, o Apps Script descarta o envio. -->
+        <div class="hp" aria-hidden="true">
+          <label for="website">Não preencha este campo</label>
+          <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+        </div>
+
+        <div class="field">
+          <label for="nome">Nome <span class="req" aria-hidden="true">*</span></label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome" autocomplete="name" required>
+          <p class="err" data-err-for="nome"></p>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="email">E-mail <span class="req" aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" autocomplete="email" inputmode="email" required>
+            <p class="err" data-err-for="email"></p>
+          </div>
+          <div class="field">
+            <label for="whatsapp">WhatsApp <span class="req" aria-hidden="true">*</span></label>
+            <input type="tel" id="whatsapp" name="whatsapp" placeholder="(00) 00000-0000" autocomplete="tel" inputmode="numeric" maxlength="15" required>
+            <p class="err" data-err-for="whatsapp"></p>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="segmento">Você trabalha em <span class="req" aria-hidden="true">*</span></label>
+          <div class="select-wrap">
+            <select id="segmento" name="segmento" required>
+              <option value="" selected disabled>Selecione uma opção</option>
+              <option>Clínica médica</option>
+              <option>Clínica odontológica</option>
+              <option>Clínica veterinária</option>
+              <option>Laboratório</option>
+              <option>Hospital</option>
+              <option>Empresa de gestão/coleta de resíduos</option>
+              <option>Outro</option>
+            </select>
+            <svg class="select-caret" viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M6 8l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <p class="err" data-err-for="segmento"></p>
+        </div>
+
+        <fieldset class="field">
+          <legend>Quantas unidades você gerencia? <span class="req" aria-hidden="true">*</span></legend>
+          <div class="chips" data-group="unidades">
+            <label class="opt"><input type="radio" name="unidades" value="1" required><span>1</span></label>
+            <label class="opt"><input type="radio" name="unidades" value="2-5"><span>2–5</span></label>
+            <label class="opt"><input type="radio" name="unidades" value="6-10"><span>6–10</span></label>
+            <label class="opt"><input type="radio" name="unidades" value="11+"><span>11+</span></label>
+          </div>
+          <p class="err" data-err-for="unidades"></p>
+        </fieldset>
+
+        <fieldset class="field field-highlight">
+          <legend>Como você controla isso atualmente? <span class="req" aria-hidden="true">*</span>
+            <span class="hint">pode marcar mais de uma</span>
+          </legend>
+          <div class="chips" data-group="controle">
+            <label class="opt"><input type="checkbox" name="controle" value="Excel"><span>Excel</span></label>
+            <label class="opt"><input type="checkbox" name="controle" value="Google Drive"><span>Google Drive</span></label>
+            <label class="opt"><input type="checkbox" name="controle" value="WhatsApp"><span>WhatsApp</span></label>
+            <label class="opt"><input type="checkbox" name="controle" value="Sistema"><span>Sistema</span></label>
+            <label class="opt"><input type="checkbox" name="controle" value="Empresa terceirizada"><span>Empresa terceirizada</span></label>
+            <label class="opt"><input type="checkbox" name="controle" value="Outro"><span>Outro</span></label>
+          </div>
+          <p class="err" data-err-for="controle"></p>
+        </fieldset>
+
+        <div class="field">
+          <label for="dificuldade">Qual é a maior dificuldade hoje?</label>
+          <textarea id="dificuldade" name="dificuldade" rows="3" placeholder="Conte brevemente qual é o maior problema que você enfrenta..."></textarea>
+        </div>
+
+        <fieldset class="field field-highlight">
+          <legend>Se existisse uma plataforma que centralizasse isso, você teria interesse em utilizar? <span class="req" aria-hidden="true">*</span></legend>
+          <div class="stack" data-group="interesse">
+            <label class="opt opt-block"><input type="radio" name="interesse" value="Sim, teria bastante interesse" required><span>Sim, teria bastante interesse</span></label>
+            <label class="opt opt-block"><input type="radio" name="interesse" value="Talvez, gostaria de conhecer"><span>Talvez, gostaria de conhecer</span></label>
+            <label class="opt opt-block"><input type="radio" name="interesse" value="Não tenho certeza"><span>Não tenho certeza</span></label>
+            <label class="opt opt-block"><input type="radio" name="interesse" value="Não seria útil para mim"><span>Não seria útil para mim</span></label>
+          </div>
+          <p class="err" data-err-for="interesse"></p>
+        </fieldset>
+
+        <fieldset class="field">
+          <legend>
+            Quanto você consideraria razoável pagar por mês por uma ferramenta que resolvesse esse problema?
+            <span class="hint">opcional — ajuda a entender o valor percebido</span>
+          </legend>
+          <div class="chips" data-group="preco">
+            <label class="opt"><input type="radio" name="preco" value="Até R$50/mês"><span>Até R$50</span></label>
+            <label class="opt"><input type="radio" name="preco" value="R$50–100/mês"><span>R$50–100</span></label>
+            <label class="opt"><input type="radio" name="preco" value="R$100–200/mês"><span>R$100–200</span></label>
+            <label class="opt"><input type="radio" name="preco" value="R$200–500/mês"><span>R$200–500</span></label>
+            <label class="opt"><input type="radio" name="preco" value="Mais de R$500/mês"><span>Mais de R$500</span></label>
+            <label class="opt"><input type="radio" name="preco" value="Não pagaria"><span>Não pagaria</span></label>
+          </div>
+        </fieldset>
+
+        <p class="form-error" id="formError" role="alert" hidden></p>
+
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submitBtn">
+          <span class="btn-label">Quero participar da validação</span>
+          <span class="spinner" aria-hidden="true"></span>
+        </button>
+
+        <p class="form-micro">Sem compromisso. Estamos apenas validando a ideia.</p>
+        <p class="form-legal">Seus dados serão usados apenas para conversarmos sobre esta validação.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section" id="faq">
+  <div class="shell shell-narrow">
+    <div class="section-head">
+      <p class="eyebrow"><span>07</span> Dúvidas</p>
+      <h2 class="section-title">Perguntas frequentes</h2>
+    </div>
+
+    <div class="faq">
+      <details class="faq-item" open>
+        <summary>O ResíduoSafe já está disponível?<span class="faq-icon" aria-hidden="true"></span></summary>
+        <div class="faq-body"><p>Estamos atualmente validando a ideia e conversando com os primeiros potenciais usuários.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary>Quanto vai custar?<span class="faq-icon" aria-hidden="true"></span></summary>
+        <div class="faq-body"><p>O preço ainda está sendo definido. Queremos entender primeiro quais funcionalidades realmente geram valor para os estabelecimentos.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary>Quando será lançado?<span class="faq-icon" aria-hidden="true"></span></summary>
+        <div class="faq-body"><p>A previsão será definida após a etapa de validação.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary>Preciso pagar para participar?<span class="faq-icon" aria-hidden="true"></span></summary>
+        <div class="faq-body"><p>Não. Neste momento estamos apenas coletando interesse e feedback.</p></div>
+      </details>
+      <details class="faq-item">
+        <summary>Para quem é o ResíduoSafe?<span class="faq-icon" aria-hidden="true"></span></summary>
+        <div class="faq-body"><p>Para clínicas, consultórios, laboratórios e outros estabelecimentos que precisam organizar informações e documentos relacionados à gestão de resíduos.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA FINAL ============ -->
+<section class="final-cta">
+  <div class="shell shell-narrow final-inner">
+    <h2 class="final-title">Essa ferramenta resolveria um problema real para você?</h2>
+    <p class="final-text">
+      Estamos construindo os primeiros protótipos. Se esse problema faz parte da sua
+      rotina, queremos ouvir você.
+    </p>
+    <a class="btn btn-primary btn-lg" href="#validacao" data-cta="final">
+      Tenho interesse
+      <svg viewBox="0 0 20 20" width="16" height="16" aria-hidden="true"><path d="M4 10h11M11 6l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+    <p class="final-micro">Sem compromisso. Estamos apenas validando a ideia.</p>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="shell footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="30" height="30">
+          <rect width="32" height="32" rx="9" fill="currentColor" opacity=".1"/>
+          <path d="M11 9h7l4 4v10a1 1 0 0 1-1 1H11a1 1 0 0 1-1-1V10a1 1 0 0 1 1-1z" fill="none" stroke="currentColor" stroke-width="1.7"/>
+          <path d="M18 9v4h4" fill="none" stroke="currentColor" stroke-width="1.7"/>
+          <path d="M13.4 18.6l2 2 4-4.4" fill="none" stroke="var(--green)" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+      <div>
+        <p class="footer-name">Resíduo<em>Safe</em></p>
+        <p class="footer-tag">Gestão documental para resíduos de serviços de saúde.</p>
+      </div>
+    </div>
+
+    <nav class="footer-links" aria-label="Links do rodapé">
+      <a href="#">Privacidade</a>
+      <a href="#">Termos</a>
+      <a href="#validacao">Contato</a>
+    </nav>
+  </div>
+  <div class="shell footer-bottom">
+    <p>© 2026 ResíduoSafe</p>
+    <p class="footer-status"><span class="pill-dot" aria-hidden="true"></span> Produto em fase de validação</p>
+  </div>
+</footer>
+
+<!-- ============ CTA FIXO MOBILE ============ -->
+<div class="mobile-cta" id="mobileCta" hidden>
+  <a class="btn btn-primary btn-block" href="#validacao" data-cta="mobile_sticky">Quero participar da validação</a>
+  <p>Sem compromisso · leva 1 minuto</p>
+</div>
+
+<!-- ============ MODAL DE SUCESSO ============ -->
+<div class="modal" id="successModal" role="dialog" aria-modal="true" aria-labelledby="successTitle" hidden>
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-card" role="document">
+    <div class="modal-check" aria-hidden="true">
+      <svg viewBox="0 0 48 48" width="44" height="44"><circle cx="24" cy="24" r="21" fill="none" stroke="currentColor" stroke-width="2" opacity=".3"/><path d="M15 24.5l6.5 6.5L33 18" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
+    <h2 id="successTitle">Obrigado! 🚀</h2>
+    <p class="modal-lead">Seu interesse foi registrado.</p>
+    <p>Estamos conversando com os primeiros profissionais para entender o problema e construir uma solução realmente útil.</p>
+    <p class="modal-extra">Se você tiver disponibilidade para conversar sobre como faz esse controle hoje, isso também nos ajudará muito.</p>
+    <button type="button" class="btn btn-primary btn-block" data-close>Fechar</button>
+  </div>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
