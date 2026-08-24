@@ -46,8 +46,7 @@
 
   // Mapa opcional: evento interno -> evento padrão do Meta Pixel
   var META_MAP = {
-    form_completed: 'Lead',
-    hero_cta_clicked: 'InitiateCheckout'
+    form_completed: 'Lead'
   };
 
   function track(eventName, params) {
